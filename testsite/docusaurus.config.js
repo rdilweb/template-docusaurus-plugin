@@ -102,4 +102,14 @@ module.exports = {
       },
     ],
   ],
+  // THIS IS YOUR PLUGIN'S ENTRYPOINT.
+  // YOU CAN TEST IT OUT WITH DIFFERENT OPTIONS BY PASSING THEM IN THE OBJECT LITERAL
+  plugins: [
+    [
+      require.resolve("../build/index.js"),
+      {
+        // options here, or if you have none, just leave this empty.
+      },
+    ],
+  ],
 }
